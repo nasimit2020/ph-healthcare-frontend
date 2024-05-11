@@ -9,6 +9,7 @@ const HeroSection = () => {
         display: "flex",
         direction: "row",
         my: 16,
+        height: "480px",
       }}
     >
       <Box
@@ -107,7 +108,7 @@ const HeroSection = () => {
         <Box
           sx={{
             position: "absolute",
-            bottom: "-50px",
+            bottom: "-10px",
             right: "0",
             zIndex: "-1",
           }}
