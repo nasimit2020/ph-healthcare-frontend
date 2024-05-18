@@ -8,7 +8,7 @@ const Specialist = async () => {
     },
   });
   const { data: specialties } = await res.json();
-  //   console.log(specialties);
+  // console.log(specialties);
 
   return (
     <Container>
@@ -22,7 +22,7 @@ const Specialist = async () => {
           </Typography>
         </Box>
         <Stack direction="row" gap={4} mt={5}>
-          {specialties.map((specialty: any) => (
+          {specialties.slice(0, 6).map((specialty: any) => (
             <Box
               key={specialty.id}
               sx={{
@@ -46,14 +46,14 @@ const Specialist = async () => {
               }}
             >
               <Image
-                src={specialty.icon}
+                src={specialty?.icon}
                 width={100}
                 height={100}
                 alt="specialty icon"
               />
               <Box>
                 <Typography component="p" fontWeight={300} fontSize={18} mt={2}>
-                  {specialty.title}
+                  {specialty?.title}
                 </Typography>
               </Box>
             </Box>
