@@ -10,9 +10,6 @@ import { DataGrid, GridColDef } from "@mui/x-data-grid";
 import Image from "next/image";
 import DeleteIcon from "@mui/icons-material/Delete";
 import { toast } from "sonner";
-import { getUserInfo } from "@/services/auth.services";
-import { getFromLocalStorage } from "@/utils/local-storge";
-import { authKey } from "@/constant/authKey";
 
 const SpecialtiesPage = () => {
   const [isModalOpen, setIsModalOpen] = useState<boolean>(false);

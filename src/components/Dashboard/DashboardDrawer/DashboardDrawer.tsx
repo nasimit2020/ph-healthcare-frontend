@@ -60,7 +60,7 @@ export default function DashboardDrawer({
           </IconButton>
           <Box>
             <Typography variant="body2" noWrap component="div" color="gray">
-              Hi, Md. Nasim Reza
+              Hi, {}
             </Typography>
             <Typography
               variant="body2"
